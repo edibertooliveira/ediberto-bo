@@ -2,6 +2,7 @@ body, header, main, nav, section{
   width: 100%;
   padding: 0px;
   margin: 0px;
+  backgraoud-color: #fdf9edff
 }
 
 /* Config work */
