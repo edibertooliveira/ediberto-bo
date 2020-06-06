@@ -1,0 +1,105 @@
+body, header, main, nav, section{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Config work */
+
+.d-flex{
+  display: flex !important;
+}
+
+.d-inline{
+  display: inline;
+}
+
+.align-i-center{
+  align-items: center !important;
+}
+
+.align-i-end{
+  align-items: right;
+}
+
+.justify-c-end{
+  justify-content: flex-end;
+}
+
+.justify-c-center{
+  justify-content: center;
+}
+
+.list-type-none{
+  list-style-type: none;
+}
+
+.list-item, .list-item-different {
+  font-family: sans-serif;
+  padding: 15px;
+  padding-right: 45px;
+  margin: 5px;
+  height: 10px;
+  
+}
+
+.list-item-different {
+  background-color: #ffcb6fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: #333331ff;
+  font-size: 20px;
+ 
+}
+
+/* Main header */
+header{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  height: 170px;
+}
+
+.title-logo{
+  width: 80%;
+  font-size: 40px;
+}
+
+/* Network edit */
+.w-social {
+  width: 20%;
+}
+.cube{
+  display: flex;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 auto;
+  color: #fff;
+}
+
+/*Background color social network*/  
+.nw-c-navyblue{
+  background-color: #0044aaff;
+}
+.nw-c-blue{
+  background-color: #2a7fffff;
+}
+.nw-c-pink{
+  background-color: #ff0066ff;
+}
+.nw-c-black{
+  background-color: #000;
+}
+
+
