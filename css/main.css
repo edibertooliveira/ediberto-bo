@@ -1,14 +1,39 @@
-body, header, main, nav, section{
+html, body, header, main, nav, article, section, figure, footer{
   width: 100%;
   padding: 0px;
   margin: 0px;
-  backgraoud-color: #fdf9edff
+  background-color: #fdf9edff;
+  font-family: sans-serif;
+  color: #333331ff;
+}
+
+row{
+  display: block;
 }
 
 /* Config work */
+.container-fixed {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
 .d-flex{
-  display: flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.flex-column {
+  -ms-flex-direction: column !important;
+  flex-direction: column !important;
 }
 
 .d-inline{
@@ -21,6 +46,10 @@ body, header, main, nav, section{
 
 .align-i-end{
   align-items: right;
+}
+
+.justify-c-start{
+  justify-content: flex-start;
 }
 
 .justify-c-end{
@@ -37,11 +66,10 @@ body, header, main, nav, section{
 
 .list-item, .list-item-different {
   font-family: sans-serif;
-  padding: 15px;
+  padding: 10px;
   padding-right: 45px;
   margin: 5px;
   height: 10px;
-  
 }
 
 .list-item-different {
@@ -54,10 +82,15 @@ a{
   text-decoration: none;
   color: #333331ff;
   font-size: 20px;
- 
 }
 
-/* Main header */
+.col-md-6{
+  width: 50%;    
+}
+
+/* Main header 
+    MENU
+*/
 header{
   width: 100%;
   padding: 0px;
@@ -73,9 +106,14 @@ main {
   font-size: 40px;
 }
 
-/* Network edit */
+/* Network edit 
+    SOCIAL NETWORK
+*/
 .w-social {
   width: 20%;
+}
+.w-social i{
+  font-size: 30px;
 }
 .cube{
   display: flex;
@@ -85,7 +123,6 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 0 auto;
   color: #fff;
 }
 
@@ -101,6 +138,74 @@ main {
 }
 .nw-c-black{
   background-color: #000;
+}
+
+/* //Section img, but text 
+      SOFTWERE DEVELOPMENT &
+      COMPUTER SKILLS
+*/
+.soft_development, .computer_skills{
+  height: 550px;
+}
+
+.img-article{
+  background-color: #242017ff;
+  height: 450px;
+}
+.soft_development .img-article div {
+  width: 350px;
+  background: url(/betooliveira18.github.io/img/img_01.jpg), no-repeat;
+  background-size: cover;
+}
+
+.computer_skills .img-article div {
+  width: 350px;
+  background: url(/betooliveira18.github.io/img/img_02.jpg), no-repeat;
+  background-size: cover;
+}
+
+/*text*/
+.article-text{
+  padding: 35px;
+}
+
+/*CARROSSEL*/
+
+.portfolio-now{
+  height: 200px;
+  background-color: #e3dedbff;
+}
+.text-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.now{
+  height: 100px;
+  background-color: #ac9d93ff;
+  
+}
+
+/*Footer*/
+
+/*TALK ME TO ME*/
+.form-contact{
+  height: 250px;
+  background-color: #ac9d93ff;
+}
+
+/*END DOCUMENT*/
+.credit-creator{
+  display: flex;
+  height: 35px;
+  background-color: #242017ff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.credit-creator span{
+  display: block;
+  padding: 5px;
 }
 
 
