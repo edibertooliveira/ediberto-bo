@@ -1,3 +1,13 @@
+/*Fonts google*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/*Fonts file*/
+@font-face{
+  font-family: "Rahayu";
+  src: url("/betooliveira18.github.io/font/Raulina.ttf");
+}
+
+
 html, body, header, main, nav, article, section, figure, footer{
   width: 100%;
   padding: 0px;
@@ -5,10 +15,6 @@ html, body, header, main, nav, article, section, figure, footer{
   background-color: #fdf9edff;
   font-family: sans-serif;
   color: #333331ff;
-}
-
-row{
-  display: block;
 }
 
 /* Config work */
@@ -60,6 +66,40 @@ row{
   justify-content: center;
 }
 
+.col-md-6{
+  width: 50%;    
+}
+
+/* Main header 
+    MENU
+*/
+header{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+header h1{
+
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-family: "Rahayu";
+}
+
+.title-logo{
+  width: 80%;
+  font-size: 25pt;
+  align-self: center;
+}
+
+/* MENU LINK */
+
+header ul{
+  padding: 0px;
+  margin: 0px;
+}
+
 .list-type-none{
   list-style-type: none;
 }
@@ -84,27 +124,10 @@ a{
   font-size: 20px;
 }
 
-.col-md-6{
-  width: 50%;    
-}
-
-/* Main header 
-    MENU
-*/
-header{
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-
 main {
-  height: 170px;
+  height: 130px;
 }
 
-.title-logo{
-  width: 80%;
-  font-size: 40px;
-}
 
 /* Network edit 
     SOCIAL NETWORK
@@ -113,12 +136,12 @@ main {
   width: 20%;
 }
 .w-social i{
-  font-size: 30px;
+  font-size: 20px;
 }
 .cube{
   display: flex;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +168,7 @@ main {
       COMPUTER SKILLS
 */
 .soft_development, .computer_skills{
-  height: 550px;
+  height: 520px;
 }
 
 .img-article{
@@ -172,7 +195,7 @@ main {
 /*CARROSSEL*/
 
 .portfolio-now{
-  height: 400px;
+  height: 300px;
   background-color: #e3dedbff;
 }
 .text-center{
@@ -181,8 +204,8 @@ main {
   align-items: center;
 }
 .now{
-  height: 350px;
-  margin-bottom: 50px;
+  height: 250px;
+  margin-bottom: 10px;
   background-color: #ac9d93ff;
 }
 
@@ -190,6 +213,7 @@ img{
   max-height: 150px;
 }
 .owl-prev span{
+  opacity: 0.1;
   left: 5%;
   position: absolute;
   top: 5%;
@@ -198,6 +222,7 @@ img{
 }
 
 .owl-next span{
+  opacity: 0.1;
   right: 5%;
   position: absolute;
   top: 5%;
@@ -209,8 +234,44 @@ img{
 
 /*TALK ME TO ME*/
 .form-contact{
-  height: 250px;
+  height: 200px;
   background-color: #ac9d93ff;
+}
+#id-email, #id-name{
+  font-family: sans-serif;
+  color: #333331ff;
+  margin: 3px;
+  border: none;
+  height: 22px;
+}
+
+#id-message{
+  font-family: sans-serif;
+  color: #333331ff;
+  margin: 3px;
+  border: none;
+  height: 50px;
+}
+
+.text-message{
+  margin: 2;
+}
+
+footer form h2{
+  padding: 0px;
+  margin: 15px;
+}
+
+.b-submit{
+  background-color: #ffcb6fff;
+  height: 35px;
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+  border: none;
+  font-weight: bolder;
+  color: #333331ff;
+  margin-top: 10px;
 }
 
 /*END DOCUMENT*/
@@ -221,6 +282,7 @@ img{
   justify-content: space-between;
   align-items: center;
   color: #ac9d93ff;
+  font-size: 0.8em;
 }
 
 .credit-creator span{
@@ -228,5 +290,19 @@ img{
   padding: 5px;
   color: #ac9d93ff;
 }
+
+/*Button
+  READ ME*/
+
+  .b-read-me{
+    background-color: #ffcb6fff;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    line-height: 35px;
+  }
+
+
+  
 
 

@@ -83,7 +83,7 @@
             my skills as a software developer.</p>
             <!--BUTTON-->
           <div class="button-link d-flex justify-c-end">
-            <a href="#">Read me</a>
+            <a class="b-read-me" href="#">Read me</a>
           </div>
         </div>
       </article>
@@ -153,7 +153,7 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam odit debitis rerum tenetur ad quod incidunt, atque, inventore praesentium consequuntur delectus, molestias minus nobis? Repudiandae nostrum quam eum blanditiis.</p>
             <!--BUTTON-->
           <div class="button-link d-flex justify-c-end">
-            <a href="#">Read me</a>
+            <a class="b-read-me" href="#">Read me</a>
           </div>
         </div>
         <!--IMAGE COMPUTER SKILLS-->
@@ -170,10 +170,25 @@
     <footer>
     
       <!-- TALK ME TO ME -->
-      <div class="form-contact">
+      <div class="form-contact d-flex align-i-center justify-c-center">
         <form>
+          <h2 class="text-center">Talk to me</h2>
+          <div class="row d-flex align-i-center justify-c-center">
+            <div class="name-email d-flex flex-column">
+              <input type="email" name="email" id="id-email" placeholder="E-mail:">
+              <input type="text" name="name" id="id-name" placeholder="Name:">
+            </div>
+            <div class="text-message">
+              <textarea name="message" id="id-message" cols="20" rows="4" placeholder="Message"></textarea>
+            </div>
+            
+          </div>
+          <div class="button-submit d-flex justify-c-center">
+            <button class="b-submit" type="submit">Submit</button>
+          </div>
           
         </form>
+        
     
       </div>
             <!-- END DOCUMENT -->
