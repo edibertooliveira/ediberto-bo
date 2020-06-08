@@ -1,19 +1,23 @@
-/*Fonts google*/
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-
 /*Fonts file*/
 @font-face{
-  font-family: "Rahayu";
-  src: url("/betooliveira18.github.io/font/Raulina.ttf");
+  font-family: "Astrid";
+  src: url("/betooliveira18.github.io/font/Astrid.ttf");
 }
-
+@font-face{
+  font-family: "NewGothic";
+  src: url("/betooliveira18.github.io/font/NewsGothicStd-Bold.otf");
+}
+@font-face{
+  font-family: "NewGothic-B";
+  src: url("/betooliveira18.github.io/font/NewsGothicStd.otf");
+}
 
 html, body, header, main, nav, article, section, figure, footer{
   width: 100%;
   padding: 0px;
   margin: 0px;
   background-color: #fdf9edff;
-  font-family: sans-serif;
+  font-family: "NewGothic-B";
   color: #333331ff;
 }
 
@@ -70,6 +74,10 @@ html, body, header, main, nav, article, section, figure, footer{
   width: 50%;    
 }
 
+h1{
+  font-family: "NewGothic";
+}
+
 /* Main header 
     MENU
 */
@@ -84,7 +92,7 @@ header h1{
   padding: 0px;
   margin: 0px;
   text-align: center;
-  font-family: "Rahayu";
+  font-family: "Astrid";
 }
 
 .title-logo{
@@ -105,7 +113,7 @@ header ul{
 }
 
 .list-item, .list-item-different {
-  font-family: sans-serif;
+  font-family:  "NewGothic-B";
   margin: 5px;
   height: 30px;
   padding: 10px;
@@ -114,7 +122,7 @@ header ul{
 .list-item-different {
   background-color: #ffcb6fff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "NewGothic";
   margin-right: 0px;
 }
 
@@ -168,8 +176,9 @@ main {
       COMPUTER SKILLS
 */
 .soft_development, .computer_skills{
-  height: 520px;
+  height: 550px;
 }
+
 
 .img-article{
   background-color: #242017ff;
@@ -234,11 +243,11 @@ img{
 
 /*TALK ME TO ME*/
 .form-contact{
-  height: 200px;
+  height: 250px;
   background-color: #ac9d93ff;
 }
 #id-email, #id-name{
-  font-family: sans-serif;
+  font-family: "NewGothic-B";
   color: #333331ff;
   margin: 3px;
   border: none;
@@ -246,7 +255,7 @@ img{
 }
 
 #id-message{
-  font-family: sans-serif;
+  font-family: "NewGothic-B";
   color: #333331ff;
   margin: 3px;
   border: none;
@@ -272,10 +281,13 @@ footer form h2{
   font-weight: bolder;
   color: #333331ff;
   margin-top: 10px;
+  font-family: "NewGothic";
 }
 
 /*END DOCUMENT*/
 .credit-creator{
+  font-family: sans-serif;
+  border-top: #fff 1 solid;
   display: flex;
   height: 35px;
   background-color: #242017ff;
@@ -295,11 +307,13 @@ footer form h2{
   READ ME*/
 
   .b-read-me{
-    background-color: #ffcb6fff;
-    height: 35px;
-    width: 100px;
+    font-family: "NewGothic";
+    background-color: #242017ff;
+    color: #fff;
+    height: 40px;
+    width: 110px;
     text-align: center;
-    line-height: 35px;
+    line-height: 40px;
   }
 
 
