@@ -66,10 +66,9 @@ row{
 
 .list-item, .list-item-different {
   font-family: sans-serif;
-  padding: 10px;
-  padding-right: 45px;
   margin: 5px;
-  height: 10px;
+  height: 30px;
+  padding: 10px;
 }
 
 .list-item-different {
@@ -182,13 +181,28 @@ main {
   align-items: center;
 }
 .now{
-  height: 300px;
-  
+  height: 350px;
+  margin-bottom: 50px;
   background-color: #ac9d93ff;
-  
 }
-.item-inner img{
-  width: 50%;
+
+img{
+  max-height: 150px;
+}
+.owl-prev span{
+  left: 5%;
+  position: absolute;
+  top: 5%;
+  color: #fff;
+  font-size: 100px;
+}
+
+.owl-next span{
+  right: 5%;
+  position: absolute;
+  top: 5%;
+  color: #fff;
+  font-size: 100px;
 }
 
 /*Footer*/
@@ -206,11 +220,13 @@ main {
   background-color: #242017ff;
   justify-content: space-between;
   align-items: center;
+  color: #ac9d93ff;
 }
 
 .credit-creator span{
   display: block;
   padding: 5px;
+  color: #ac9d93ff;
 }
 
 

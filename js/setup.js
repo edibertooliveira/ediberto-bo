@@ -3,21 +3,20 @@ $(document).ready(function(){
 
   $(".thumbnails").owlCarousel({
     loop:true,
-    margin: 10,
+    margin:10,
     nav:true,
-    navText: ["Anterio","Próximo"],
-    responsive: {
+    responsive:{
       0 :{
         items: 2
       },
       480:{
-        items: 3
+        items: 4
       },
       768:{
         items: 5
       },
       1381:{
-        items: 8
+        items: 7
       }
     }
   });
