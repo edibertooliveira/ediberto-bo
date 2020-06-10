@@ -12,7 +12,7 @@
   src: url("/betooliveira18.github.io/font/NewsGothicStd.otf");
 }
 
-html, body, header, main, nav, article, section, figure, footer{
+html, body{
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -23,300 +23,279 @@ html, body, header, main, nav, article, section, figure, footer{
 
 /* Config work */
 .container-fixed {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-rows: auto 550px auto 550px 300px;
+  grid-gap: 5px 5px;
+}
+
+header, section, footer {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
-.row{
-  display: -ms-flexbox;
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+footer{
+  background-color:#ac9d93ff;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
+}
+
+/*MAIN*/
+
+/*LOGO PAGE*/
+header main{
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+}
+header main h1{
+  font-family: "Astrid";
+  font-size: 4rem;
+  padding: 0;
+  margin: 0;
+}
+header main .logo-pg{
+  display: flex;
+  height: 100px;
+  width: 70%;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.d-flex{
-    display: -ms-flexbox !important;
-    display: flex !important;
-}
-
-.flex-column {
-  -ms-flex-direction: column !important;
-  flex-direction: column !important;
-}
-
-.d-inline{
-  display: inline;
-}
-
-.align-i-center{
-  align-items: center !important;
-}
-
-.align-i-end{
-  align-items: right;
-}
-
-.justify-c-start{
-  justify-content: flex-start;
-}
-
-.justify-c-end{
+/*SOCIAL NETWORK*/
+header main .social-network{
+  display: grid;
+  width: 30%;
   justify-content: flex-end;
 }
 
-.justify-c-center{
-  justify-content: center;
-}
-
-.col-md-6{
-  width: 50%;    
-}
-
-h1{
-  font-family: "NewGothic";
-}
-
-/* Main header 
-    MENU
-*/
-header{
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-
-header h1{
-
-  padding: 0px;
-  margin: 0px;
-  text-align: center;
-  font-family: "Astrid";
-}
-
-.title-logo{
-  width: 80%;
-  font-size: 25pt;
-  align-self: center;
-}
-
-/* MENU LINK */
-
-header ul{
-  padding: 0px;
-  margin: 0px;
-}
-
-.list-type-none{
-  list-style-type: none;
-}
-
-.list-item, .list-item-different {
-  font-family:  "NewGothic-B";
-  margin: 5px;
+.social-network .cube{
+  display: block;
+  width: 35px;
   height: 30px;
-  padding: 10px;
-}
-
-.list-item-different {
-  background-color: #ffcb6fff;
-  text-transform: uppercase;
-  font-family: "NewGothic";
-  margin-right: 0px;
-}
-
-a{
-  text-decoration: none;
-  color: #333331ff;
-  font-size: 20px;
-}
-
-main {
-  height: 130px;
-}
-
-
-/* Network edit 
-    SOCIAL NETWORK
-*/
-.w-social {
-  width: 20%;
-}
-.w-social i{
-  font-size: 20px;
-}
-.cube{
-  display: flex;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  color: #fff;
+  align-self: flex-end;
 }
 
-/*Background color social network*/  
+.nw-c-pink{
+  background-color: #ff0066ff;
+}
 .nw-c-navyblue{
   background-color: #0044aaff;
 }
 .nw-c-blue{
   background-color: #2a7fffff;
 }
-.nw-c-pink{
-  background-color: #ff0066ff;
-}
 .nw-c-black{
-  background-color: #000;
+  background-color: #000000ff;
 }
 
-/* //Section img, but text 
-      SOFTWERE DEVELOPMENT &
-      COMPUTER SKILLS
-*/
-.soft_development, .computer_skills{
-  height: 550px;
+.cube i{
+  font-size: 15pt;
+  line-height: 30px;
+  color: #fff;
 }
 
-
-.img-article{
-  background-color: #242017ff;
-  height: 450px;
-}
-.soft_development .img-article div {
-  width: 350px;
-  background: url(/betooliveira18.github.io/img/img_01.jpg), no-repeat;
-  background-size: cover;
+/*MENU*/
+header nav .menu-link{
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
 }
 
-.computer_skills .img-article div {
-  width: 350px;
-  background: url(/betooliveira18.github.io/img/img_02.jpg), no-repeat;
-  background-size: cover;
+header nav ul{
+  display: flex;
+  list-style-type: none;
+  align-self: flex-end;
+  padding: 0;
+  margin: 0px;
+}
+header nav ul .list-item, .list-item-different{
+  margin: 0px 0px 0px 10px;
+  padding: 10px;
+}
+header nav ul .list-item-different{
+  display: block;
+  background-color: #ffcb6fff;
+  font-family: "NewGothic";
 }
 
-/*text*/
-.article-text{
-  padding: 35px;
+header nav ul li .link-none{
+  margin: 0px 30px 0px 30px;
+  text-decoration: none;
+  color: #333331ff;
 }
 
-/*CARROSSEL*/
+/* SOFTWERE DEVELOPMENT */
 
-.portfolio-now{
-  height: 300px;
+section.soft_development{
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  justify-content: center;
+}
+
+.soft_development > .img-article{
+  max-width: 100%;
+  display: block;
+  align-self: center;
+}
+
+.soft_development > .article-text{
+  align-self: center;
+
+}
+
+/*CAROUSEL*/
+
+section.portfolio-now{
   background-color: #e3dedbff;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
-.text-center{
+
+section h1 {
+  text-align: center;
+}
+
+section .plugin-carousel{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 880px;
+  background-color: #ac9d93ff;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+section .item {
+  display: flex;
+  margin: 0 auto;
+  margin: 10px 0px 10px 0px;
+  flex: 1 1 200px;
+  justify-content: center;
+}
+
+section .item img{
+  max-width: 200px;
+}
+
+
+/* COMPUTER SKILLS */
+
+section.computer_skills{
+  display: flex;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  justify-items: center;
+}
+
+
+
+.computer_skills > .article-text{
+  display: block;
+  align-self: center;
+}
+
+.computer_skills  .img-article{
+  max-width: 100%;
+  display: block;
+  align-self: center;
+}
+
+section .computer_skills img{
+  height: 200px;
+}
+
+/*END*/
+
+footer{
+  display: grid;
+  align-items: flex-end;
+}
+/* TALK TO ME*/
+
+footer h2{
+  display: block;
+  text-align: center;
+}
+
+footer .form-input{
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.now{
-  height: 250px;
-  margin-bottom: 10px;
-  background-color: #ac9d93ff;
 }
 
-img{
-  max-height: 150px;
-}
-.owl-prev span{
-  opacity: 0.1;
-  left: 5%;
-  position: absolute;
-  top: 5%;
-  color: #fff;
-  font-size: 100px;
-}
-
-.owl-next span{
-  opacity: 0.1;
-  right: 5%;
-  position: absolute;
-  top: 5%;
-  color: #fff;
-  font-size: 100px;
-}
-
-/*Footer*/
-
-/*TALK ME TO ME*/
-.form-contact{
-  height: 250px;
-  background-color: #ac9d93ff;
-}
-#id-email, #id-name{
-  font-family: "NewGothic-B";
-  color: #333331ff;
-  margin: 3px;
+#id-name, #id-email{
+  display: block;
   border: none;
-  height: 22px;
+  margin: 5px;
+  height: 40px;
 }
-
 #id-message{
-  font-family: "NewGothic-B";
-  color: #333331ff;
-  margin: 3px;
+  display: block;
   border: none;
-  height: 50px;
+  margin: 5px;
+  height: 90px;
 }
 
-.text-message{
-  margin: 2;
+footer .name-email{
+  display: grid;
 }
+/* BUTTON */
 
-footer form h2{
-  padding: 0px;
+footer .button-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 15px;
 }
 
 .b-submit{
-  background-color: #ffcb6fff;
-  height: 35px;
-  width: 100px;
-  text-align: center;
-  line-height: 35px;
+  height: 30px;
+  width: 60px;
   border: none;
-  font-weight: bolder;
-  color: #333331ff;
-  margin-top: 10px;
-  font-family: "NewGothic";
+  font-weight: bold;
+  background-color: #ffcb6fff;
+  border-radius: 10%;
 }
 
-/*END DOCUMENT*/
-.credit-creator{
-  font-family: sans-serif;
-  border-top: #fff 1 solid;
-  display: flex;
-  height: 35px;
-  background-color: #242017ff;
-  justify-content: space-between;
-  align-items: center;
-  color: #ac9d93ff;
-  font-size: 0.8em;
-}
-
-.credit-creator span{
+.b-read-me{
   display: block;
-  padding: 5px;
-  color: #ac9d93ff;
+  height: 40px;
+  width: 100px;
+  border: none;
+  font-weight: bold;
+  background-color: #ffcb6fff;
+  border-radius: 10%;
+  text-decoration: none;
+  color: #333331ff;
+  text-align: center;
+  line-height: 45px;
 }
 
-/*Button
-  READ ME*/
-
-  .b-read-me{
-    font-family: "NewGothic";
-    background-color: #242017ff;
-    color: #fff;
-    height: 40px;
-    width: 110px;
-    text-align: center;
-    line-height: 40px;
-  }
 
 
-  
-
-
+/* CREDIT CREATOR*/
+footer .credit-creator span{
+  padding: 5px;
+}
+footer .credit-creator{
+  background-color: #242017ff;
+  color: #fdf9edff;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0px 5px;
+}

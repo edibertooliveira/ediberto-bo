@@ -7,16 +7,16 @@ $(document).ready(function(){
     nav:true,
     responsive:{
       0 :{
-        items: 2
+        items: 3
       },
       480:{
-        items: 4
+        items: 3
       },
       768:{
-        items: 5
+        items: 3
       },
       1381:{
-        items: 7
+        items: 3
       }
     }
   });
