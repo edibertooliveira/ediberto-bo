@@ -11,11 +11,10 @@
     <!-- icon -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Main -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Carousel -->
-   
-  
+      <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
     <!-- START -->
@@ -25,6 +24,20 @@
           <!-- LOGO PAGE -->
           <div class="logo-pg">
             <h1>//BO.</h1>
+
+            <!--MENU-->
+            <nav>
+              <div class="menu-link">
+                <ul class="list-type-none">
+                  <li class="list-item"><a href="#" class="link-none">Home</a></li>
+                  <li class="list-item"><a href="#" class="link-none">About</a></li>
+                  <!-- <li class="list-item"><a href="#" class="link-none">Skills</a></li> -->
+                  <li class="list-item"><a href="#" class="link-none">Portfolio</a></li>
+                  <!-- <li class="list-item-different"><a href="#" class="link-none">Hire me</a></li> -->
+                </ul>
+              </div>
+            </nav>
+          
           </div>
           
           <!--SOCIAL NETWORK-->
@@ -46,18 +59,7 @@
  
         </main>
   
-        <!--MENU-->
-        <nav>
-          <div class="menu-link">
-            <ul class="list-type-none">
-              <li class="list-item"><a href="#" class="link-none">Home</a></li>
-              <li class="list-item"><a href="#" class="link-none">About</a></li>
-              <li class="list-item"><a href="#" class="link-none">Skills</a></li>
-              <li class="list-item"><a href="#" class="link-none">Portfolio</a></li>
-              <li class="list-item-different"><a href="#" class="link-none">Hire me</a></li>
-            </ul>
-          </div>
-        </nav>
+        
       </header>
 
     <!-- MID -->
@@ -68,21 +70,20 @@
 
         <!--IMAGE SOFTWERE DEVELOPMENT-->
         <figure class="img-article" >
-          <img src="/betooliveira18.github.io/img/img_01.jpg" alt="img">
+          <img src="./img/Frame 1.jpg" alt="img">
           
         </figure> 
 
         <!--TEXT SOFTWERE DEVELOPMENT-->
         <div class="article-text">
-          <h1>SOFTWERE DEVELOPMENT</h1>
-          <h3>About me</h3>
-          <p>Software Development Student. I love technology and 
-            constantly learn. At moment I'm focused on improve
-            my skills as a software developer.</p>
+          <h1>I’m Beto Oliveira</h1>
+          <h3>Softwere Development</h3>
+          <p>Hi, I'm Beto Oliveira. Illustrator creator, web designer and software development student. I love technology and I learn constantly.</p>
 
             <!--BUTTON-->
           <div class="button-link">
-            <a class="b-read-me" href="#">Read me</a>
+            <a class="b-read-me btn-1" href="#">Download CV</a>
+            <a class="b-read-me btn-2" href="#"><i class="fa fa-github"></i>Repository</a>
           </div>
 
         </div>
@@ -91,45 +92,18 @@
     
     <!-- CAROUSEL -->
     <section class="portfolio-now">
-        <h1>PORTFOLIO NOW</h1>
-
       <!-- Plug In carousel -->
       <div class="plugin-carousel">
-        <div class="item">
-            <img src="img/img_03.jpg" alt="Project">
-        </div>
-        <div class="item">
-            <img src="img/img_03.jpg" alt="Project">
-        </div>
-        <div class="item">
-            <img src="img/img_03.jpg" alt="Project">
-        </div>
-        <div class="item">
-          <img src="img/img_03.jpg" alt="Project">
-        </div>
-     
+        <div id="item" class="item"></div>
+        <div class="anterior" onclick="anterior()">o</div>
+        <div class="proximo" onclick="proximo()">x</div>
+        
       </div>
     </section>
 
-    <!-- COMPUTER SKILLS -->
-
-    <section class="computer_skills">  
-      <!--TEXT COMPUTER SKILLS-->
-      <div class="article-text">
-        <h1>COMPUTER SKILLS</h1>
-        <h3>Professional Resume</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae veniam odit debitis rerum tenetur ad quod incidunt, atque.</p>
-
-          <!--BUTTON-->
-        <div class="button-link">
-          <a class="b-read-me" href="#">Read me</a>
-        </div>
-      </div>
-
-    </section>
 
     <footer>
-      <!-- TALK ME TO ME -->
+      <!-- TALK ME TO ME 
      
        <form>
         
@@ -147,24 +121,24 @@
            <button class="b-submit" type="submit">Submit</button>
           </div>
         </form>
-    
+     -->
 
       <!-- END DOCUMENT -->
-      <div class="credit-creator">
+    
         <span>Copyright © 2020 · All Rights reserved</span>
         <span>by Ediberto B. Oliveira</span>
-      </div>
+    
 
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first -->
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
     <!-- OWL carousel -->
+    <script src="./js/script.js"></script>
+    <script src="./js/_carouselJS/carousel.js"></script>
       
   </body>
 

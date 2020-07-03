@@ -1,0 +1,40 @@
+.plugin-carousel{
+  margin: 30px auto 30px auto;
+  width: 500px;
+  height: 302px;
+  background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+.plugin-carousel .item{
+  width: 400px;
+  height: 282px;
+  background-size: cover; 
+  transition: 1s;
+}
+
+.anterior, .proximo{
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  font-weight: bolder;
+  background-color: rgba(0,0,0,.3);
+  padding: 10px;
+}
+.anterior{
+  left: 2%;
+}.proximo{
+  right: 2%;
+}
+.anterior:hover{
+  background-color: rgba(0,0,0,.8);
+}
+
+.proximo:hover{
+  background-color: rgba(0,0,0,.8);
+}
+
+
+
+
