@@ -1,7 +1,7 @@
 /*Fonts file*/
 @font-face{
   font-family: "Astrid";
-  src: url("/betooliveira18.github.io/font/Astrid.ttf");
+  src: url("font/Astrid.ttf");
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap');
 
