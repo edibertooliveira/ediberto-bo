@@ -1,0 +1,146 @@
+{
+  "header": {
+    "navbar": [
+      {
+        "name": "Sobre",
+        "link": "#about_me"
+      },
+      {
+        "name": "Experiência",
+        "link": "#experience"
+      },
+      {
+        "name": "Contato",
+        "link": "#contact"
+      }
+    ]
+  },
+  "presentation": {
+    "title": "Ediberto B.O",
+    "subtitle": "Desenvolvedor Web",
+    "description": "Sou Ediberto Oliveira, atualmente moro no BRASIL em Salvador Bahia! Sou desenvolvedor de software web e estou no mundo da programação desde 2019.",
+    "profileImage": "https://avatars.githubusercontent.com/u/48109015?v=4",
+    "backgroundImage": ""
+  },
+  "about": {
+    "title": "Um entusiasta da tecnologia.",
+    "description": "Eu tive contato tecnologia desde criança, quando ganhei meu PC com um monitor de tubo e uma caixa de disquetes. Foi bons tempos de internet discada nas madrugadas.Decidi estudar Logística mas pelo rumo que a vida tomou. Eu trabalhava na área, então era combinar o útil com o agradável. Mas meu hobby era programar e automatizar planilhas do Excel. A sensação de vê-lo funcionando depois de muitas horas de raciocínio lógico e pesquisa na documentação, não tinha preço.Sou apaixonado por desenvolvimento web tanto no front-end quanto no back-end. Os frameworks com os quais me identifico são o framework Spring de Java e as bibliotecas JavaScript React, Redux e seu ecossistema. mas eu estudo Vue e Angolar porque no final todos compilam para JS. O mesmo gancho para Styled Components vs SASS, tudo se transforma em CSS. Então, minha opinião sobre isso tudo. 'Depende do contexto e da força de trabalho do projeto.' Detalhe sobre mim, aprender é meu ponto forte. Meu tempo livre gosto de caminhar, ir à praia principalmente para sentir a energia da natureza. Tenho paixão por séries e filmes.",
+    "backgroundImage": "https://media-exp3.licdn.com/dms/image/C4D03AQEHzDdm-itFLQ/profile-displayphoto-shrink_800_800/0/1607902028745?e=1631145600&v=beta&t=ayOb-9QLRSVJDBW3rJdjL-LEEokD-DMiUZ4FHqlKe8Q"
+  },
+  "technologies": {
+    "title": "Principais tecnologias",
+    "description": "Algumas das principais tecnologias que uso e estudo",
+    "languages": [
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js-square fa-3x"
+      },
+      {
+        "name": "Linux",
+        "icon": "fab fa-linux fa-3x"
+      },
+      {
+        "name": "Git",
+        "icon": "fab fa-git fa-3x"
+      },
+      {
+        "name": "Docker",
+        "icon": "fab fa-docker fa-3x"
+      },
+      {
+        "name": "CSS",
+        "icon": "fab fa-css3-alt fa-3x"
+      }
+    ],
+    "frameworks&libs": [
+      "React",
+      "Redux",
+      "Node.js",
+      "Next.js",
+      "Styled Components",
+      "Bootstrap",
+      "Angular.js",
+      "Vue.js",
+      "RTL",
+      "Jest",
+      "Spring Framework",
+      "Hibernate",
+      "JPA"
+    ],
+    "tools": [
+      "Docker",
+      "TypeScript",
+      "SASS",
+      "Git",
+      "GitHub"
+    ]
+  },
+  "experience": {
+    "title": "Experiência",
+    "description": "Algumas das minhas principais experiências profissionais",
+    "jobs": [
+      {
+        "enterprise": "Accenture Brasil",
+        "function": "Desenvolvedor Node.JS Senior",
+        "datatime": "mar de 2022 - Atual",
+        "description": "Projetar e desenvolver tecnologias, produtos de software ou sistemas para se alinhar com as necessidades de negócios. Criar abordagem de implementação ou integração para aplicativos e seus componentes. Forneça suporte primário para lançamentos de aplicativos na produção, incluindo plano de implantação e cronograma. Coordenar e corrigir defeitos ou problemas de desempenho dentro de Contratos de Nível de Serviço. Analisar, projetar, construir e/ou testar novos componentes ou melhorias nos módulos existentes.",
+        "stack": [
+          "Javascript",
+          "Hapi.js",
+          "Fastify.js",
+          "Kong Management API",
+          "Splunk",
+          "Datadog",
+          "AWS",
+          "Mocha"
+        ]
+      },
+      {
+        "enterprise": "Ioasys",
+        "function": "Desenvolvedor Node.JS",
+        "datatime": "set de 2021 - mar de 2022",
+        "description": "Contribuir com o time de Back-end e Front-end na melhoria dos processos internos de desenvolvimento, implementando soluções atendendo as necessidades de clientes nacionais e internacionais em NodeJS, dando manutenção em soluções já implementadas.",
+        "stack": [
+          "Node.js",
+          "TypeScript",
+          "React.js",
+          "Redux",
+          "Styled Components",
+          "Bootstrap",
+          "RTL",
+          "Jest",
+          "express",
+          "Nestjs",
+          "Docker"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "city": "salvador/BA",
+    "country": "Brasil",
+    "email": "edibertooliveira@aol.com"
+  },
+  "socials": [
+    {
+      "name": "Github",
+      "link": "https://github.com/edibertooliveira",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "Twitter",
+      "link": "https://twitter.com/devEdiberto",
+      "icon": "fab fa-twitter"
+    },
+    {
+      "name": "Linkedin",
+      "link": "https://www.linkedin.com/in/edibertooliveira",
+      "icon": "fab fa-linkedin-in"
+    },
+    {
+      "name": "Instagram",
+      "link": "https://www.instagram.com/__oliveirabo",
+      "icon": "fab fa-instagram"
+    }
+  ]
+}

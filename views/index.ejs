@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon"
+    href="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/bug.png"
+    type="image/x-icon" />
+  <title>
+    <%= presentation.title %>
+  </title>
+
+  <!-- Bootstrap CSS file -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- font awesome CSS file -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+
+  <!-- custom CSS file -->
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+  <!-- Social Fixed Menu -->
+  <ul class="ct-socials">
+    <% socials.forEach(function(social) { %>
+      <li>
+        <a class="ct-socials-a" href="<%= social.link %>" target="_blank"><i class="<%= social.icon %>"></i></a>
+      </li>
+      <% }) %>
+  </ul>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand navbar-light fixed-top my-bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <% header.navbar.forEach(function(item) { %>
+            <li class="nav-item active">
+              <a class="nav-link" href="<%= item.link %>">
+                <%= item.name %>
+                  <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <% }) %>
+              <!-- <li class="nav-item">
+					<a class="nav-link" href="#">My story</a>
+				</li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Welcome page -->
+  <header class="masthead my-bg-dark">
+    <div class="container h-100 box">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center text-white output" id="output">
+
+          <div class="d-flex justify-content-center align-items-center media-ajuste">
+            <img src="images/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
+            <h1 class="font-weight-light cursor" id="header"></h1>
+          </div>
+          <p id="subheader"></p>
+        </div>
+      </div>
+      <a href=" <%= header.navbar[0].link %>" class="col-12 my-btn"><span></span></a>
+
+    </div>
+  </header>
+
+  <!-- Page About me -->
+  <div class="min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg d-flex justify-content-end align-items-center" style="margin-right: 60px;">
+          <img class="rounded-circle divShadow"
+            style="height: 350px; width: auto; margin-bottom: 20px; margin-left: 60px;"
+            src="<%= presentation.profileImage %>">
+        </div>
+
+        <div class="col-lg flex-column justify-content-start align-items-center">
+          <h2 class="font-weight-light">
+            <%= about.title %>
+          </h2>
+          <p>
+            <%= about.description %>
+          </p>
+
+          <div class="section-skills" style="margin-top: 50px;">
+
+            <h2 class="font-weight-light">
+              <%= technologies.title %>
+            </h2>
+            <small class="text-muted">
+              <%= technologies.description %>
+            </small>
+            <ul class="d-flex flex-wrap skills">
+              <% technologies.languages.forEach(function(skill) { %>
+                <li class="<%= skill.icon %>">
+                  <h5>
+                    <%= skill.name %>
+                  </h5>
+                </li>
+                <% }) %>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Experience -->
+  <div class="min-alt my-bg-dark">
+    <div class="container" id="experience">
+      <div class="content text-white">
+        <div class="align-self-center">
+          <h2 class="font-weight-light">
+            <%= experience.title %>
+          </h2>
+          <p>
+            <%= experience.description %>
+          </p>
+          <section id="cd-timeline" class="cd-container">
+            <% experience.jobs.forEach(function(job) { %>
+              <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                </div>
+
+                <div class="cd-timeline-content">
+                  <h2>
+                    <%= job.enterprise %>
+                  </h2>
+                  <div class="d-flex justify-content-between">
+                    <span class="timeline-content-info-title">
+                      <i class="fas fa-briefcase" aria-hidden="true"></i>
+                      <%= job.function %>
+                    </span>
+                    <span class="timeline-content-info-date">
+                      <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                      <%= job.datatime %>
+                    </span>
+                  </div>
+                  <!-- <p>Atuar no setor de Tecnologia da Informação - Sistemas como
+                    desenvolvedora de aplicações Web, utilizando tecnologias como PHP,
+                    CakePHP, Laravel, JavaScript, CSS, Bootstrap e outras.</p> -->
+                  <p>
+                    <%= job.description %>
+                  </p>
+                  <span class="cd-date">
+                    <%= job.datatime %>
+                  </span>
+                  <ul class="content-skills">
+                    <% job.stack.forEach(function(stackItem) { %>
+                      <li>
+                        <%= stackItem %>
+                      </li>
+                      <% }) %>
+                  </ul>
+                </div> <!-- cd-timeline-content -->
+              </div> <!-- cd-timeline-block -->
+              <% }) %>
+          </section> <!-- cd-timeline -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Social Contacts -->
+  <div class="contacts d-flex justify-content-center align-items-center text-white" id="contact">
+    <div class="row">
+
+      <div class="d-flex justify-content-center align-items-center">
+        <i class="fas fa-mail-bulk fa-lg" style="margin-right: 8px;"></i>
+        <h2>Contact me</h2>
+      </div>
+      <p class="text-center">
+        <%= contact.email %>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small indigo my-bg-footer">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 text-white">Developed with <i class="fas fa-heart"></i> by
+      <a href="https://twitter.com/bo_ju" style="color: #198754;">
+        <%= presentation.title %>
+      </a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- jQuery js file -->
+  <script src="assets/js/jquery3.6.0.js"></script>
+  <!-- Bootstrap js file -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Personalizado -->
+  <script src="javascripts/my.js"></script>
+
+</body>
+
+</html>
