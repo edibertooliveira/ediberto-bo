@@ -36,20 +36,20 @@
         "icon": "fab fa-js-square fa-3x"
       },
       {
-        "name": "Linux",
-        "icon": "fab fa-linux fa-3x"
+        "name": "Node.js",
+        "icon": "fab fa-node fa-3x"
       },
       {
-        "name": "Git",
-        "icon": "fab fa-git fa-3x"
+        "name": "AWS",
+        "icon": "fab fa-aws fa-3x"
       },
       {
         "name": "Docker",
         "icon": "fab fa-docker fa-3x"
       },
       {
-        "name": "CSS",
-        "icon": "fab fa-css3-alt fa-3x"
+        "name": "DATADOG",
+        "icon": "fas fa-dog fa-3x"
       }
     ],
     "frameworks&libs": [
@@ -117,9 +117,14 @@
     ]
   },
   "contact": {
+    "title": "Contato",
     "city": "salvador/BA",
     "country": "Brasil",
-    "email": "edibertooliveira@aol.com"
+    "email": "edibertooliveira@aol.com",
+    "credit": [
+      "Feito com ❤ por ",
+      ", use e abuse!"
+    ]
   },
   "socials": [
     {
