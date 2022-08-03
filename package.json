@@ -6,10 +6,6 @@
     "name": "Ediberto B. de Oliveira",
     "email": "edibertooliveira@aol.com"
   },
-  "engines": {
-    "node": ">=16.14.0",
-    "npm": ">=8.5.0"
-  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",

@@ -1,5 +1,5 @@
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
-const i = 0,
+let i = 0,
   a = 0,
   isBackspacing = false,
   isParagraph = false;
@@ -19,8 +19,7 @@ const speedForward = 100, //Typing Speed
 typeWriter("output", textArray);
 
 function typeWriter(id, ar) {
-  const element = $("#" + id),
-    aString = ar[a],
+  aString = ar[a],
     //   eHeader = element.children("h1"), //Header element
     //   eParagraph = element.children("p"); //Subheader element
 
@@ -85,7 +84,6 @@ function typeWriter(id, ar) {
       isParagraph = false;
       a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
       setTimeout(function () { typeWriter(id, ar); }, 50);
-
     }
   }
 }
