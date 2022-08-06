@@ -1,4 +1,9 @@
 @import url('fonts.css');
+@import url('terminal.css');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
 
 a {
     text-decoration: none;
