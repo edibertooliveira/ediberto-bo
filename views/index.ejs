@@ -27,10 +27,10 @@
 <body>
 
   <!-- Social Fixed Menu -->
-  <ul class="ct-socials">
+  <ul class="social-fixed-menu">
     <% socials.forEach(function(social) { %>
       <li>
-        <a class="ct-socials-a" href="<%= social.link %>" target="_blank"><i class="<%= social.icon %>"></i></a>
+        <a class="social-fixed-menu-a" href="<%= social.link %>" target="_blank"><i class="<%= social.icon %>"></i></a>
       </li>
       <% }) %>
   </ul>
@@ -62,7 +62,7 @@
   </nav>
 
   <!-- Welcome page -->
-  <header class="masthead my-bg-dark">
+  <header class="pg-welcome my-bg-dark">
     <div class="container h-100 box">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center text-white output" id="output">
@@ -87,13 +87,11 @@
   </header>
 
   <!-- Page About me -->
-  <div class="min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
+  <div class="pg-about-me min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
     <div class="container content">
       <div class="row">
-        <div class="col-lg d-flex justify-content-end align-items-center" style="margin-right: 60px;">
-          <img class="rounded-circle divShadow"
-            style="height: 350px; width: auto; margin-bottom: 20px; margin-left: 60px;"
-            src="<%= presentation.profileImage %>">
+        <div class="col-lg d-flex align-items-center pg-about-me-content" style="padding-right: 60px;">
+          <img class="rounded-circle divShadow pg-about-me-image" src="<%= presentation.profileImage %>">
         </div>
 
         <div class="col-lg flex-column justify-content-start align-items-center">
@@ -131,7 +129,7 @@
   </div>
 
   <!-- Page Experience -->
-  <div class="min-alt my-bg-dark">
+  <div class="pg-experience min-alt my-bg-dark">
     <div class="container" id="experience">
       <div class="content text-white">
         <div class="align-self-center">
@@ -156,11 +154,11 @@
                       <i class="fas <%= job.icon %>" aria-hidden="true"></i>
                       <%= job.function %>
                     </span>
-                    <span class="timeline-content-info-date">
-                      <i class="far fa-calendar-alt" aria-hidden="true"></i>
-                      <%= job.startdate %> - <%= job.enddate %>
-                    </span>
                   </div>
+                  <span class="timeline-content-info-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <%= job.startdate %> - <%= job.enddate %>
+                  </span>
                   <p>
                     <%= job.description %>
                   </p>
@@ -184,7 +182,7 @@
   </div>
 
   <!-- Social Contacts -->
-  <div class="contacts d-flex justify-content-center align-items-center text-white" id="contact">
+  <div class="pg-social-contacts contacts d-flex justify-content-center align-items-center text-white" id="contact">
     <div class="row">
 
       <div class="d-flex justify-content-center align-items-center">
@@ -196,11 +194,21 @@
       <p class="text-center">
         <%= contact.email %>
       </p>
+      <div class="footer-social-icons">
+        <ul class="social-icons">
+          <% socials.forEach(function(social) { %>
+            <li>
+              <a class="social-fixed-menu-a" href="<%= social.link %>" target="_blank"><i
+                  class="<%= social.icon %>"></i></a>
+            </li>
+            <% }) %>
+        </ul>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="page-footer font-small indigo my-bg-footer">
+  <footer class="pg-footer font-small indigo my-bg-footer">
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 text-white">
       <%= contact.credit[0] %>
@@ -212,8 +220,6 @@
     <!-- Copyright -->
 
   </footer>
-  <!-- Footer -->
-
 
   <!-- jQuery js file -->
   <script src="assets/js/jquery3.6.0.js"></script>
