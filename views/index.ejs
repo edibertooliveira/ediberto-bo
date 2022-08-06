@@ -21,6 +21,7 @@
 
   <!-- custom CSS file -->
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/terminal.css' />
 </head>
 
 <body>
@@ -65,11 +66,18 @@
     <div class="container h-100 box">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center text-white output" id="output">
-
-          <div class="d-flex justify-content-center align-items-center media-ajuste">
-            <img src="images/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
-            <h1 class="font-weight-light cursor" id="header"></h1>
+          <div class="termonal">
+            <div class="fakeMenu">
+              <div class="fakeButtons fakeClose"></div>
+              <div class="fakeButtons fakeMinimize"></div>
+              <div class="fakeButtons fakeZoom"></div>
+            </div>
+            <div class="fakeScreen">
+              <img src="images/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
+              <p class="font-weight-light cursor" id="header"></p>
+            </div>
           </div>
+
           <p id="subheader"></p>
         </div>
       </div>
@@ -145,7 +153,7 @@
                   </h2>
                   <div class="d-flex justify-content-between">
                     <span class="timeline-content-info-title">
-                      <i class="fas fa-briefcase" aria-hidden="true"></i>
+                      <i class="fas <%= job.icon %>" aria-hidden="true"></i>
                       <%= job.function %>
                     </span>
                     <span class="timeline-content-info-date">
