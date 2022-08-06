@@ -150,17 +150,14 @@
                     </span>
                     <span class="timeline-content-info-date">
                       <i class="far fa-calendar-alt" aria-hidden="true"></i>
-                      <%= job.datatime %>
+                      <%= job.startdate %> - <%= job.enddate %>
                     </span>
                   </div>
-                  <!-- <p>Atuar no setor de Tecnologia da Informação - Sistemas como
-                    desenvolvedora de aplicações Web, utilizando tecnologias como PHP,
-                    CakePHP, Laravel, JavaScript, CSS, Bootstrap e outras.</p> -->
                   <p>
                     <%= job.description %>
                   </p>
                   <span class="cd-date">
-                    <%= job.datatime %>
+                    <%= job.startdate %>
                   </span>
                   <ul class="content-skills">
                     <% job.stack.forEach(function(stackItem) { %>
@@ -184,7 +181,9 @@
 
       <div class="d-flex justify-content-center align-items-center">
         <i class="fas fa-mail-bulk fa-lg" style="margin-right: 8px;"></i>
-        <h2>Contact me</h2>
+        <h2>
+          <%= contact.title %>
+        </h2>
       </div>
       <p class="text-center">
         <%= contact.email %>
@@ -195,10 +194,12 @@
   <!-- Footer -->
   <footer class="page-footer font-small indigo my-bg-footer">
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 text-white">Developed with <i class="fas fa-heart"></i> by
-      <a href="https://twitter.com/bo_ju" style="color: #198754;">
-        <%= presentation.title %>
-      </a>
+    <div class="footer-copyright text-center py-3 text-white">
+      <%= contact.credit[0] %>
+        <a href="https://twitter.com/bo_ju" style="color: #198754;">
+          <%= presentation.title %>
+        </a>
+        <%= contact.credit[1] %>
     </div>
     <!-- Copyright -->
 
