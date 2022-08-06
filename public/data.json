@@ -36,20 +36,20 @@
         "icon": "fab fa-js-square fa-3x"
       },
       {
-        "name": "Linux",
-        "icon": "fab fa-linux fa-3x"
+        "name": "Node.js",
+        "icon": "fab fa-node fa-3x"
       },
       {
-        "name": "Git",
-        "icon": "fab fa-git fa-3x"
+        "name": "AWS",
+        "icon": "fab fa-aws fa-3x"
       },
       {
         "name": "Docker",
         "icon": "fab fa-docker fa-3x"
       },
       {
-        "name": "CSS",
-        "icon": "fab fa-css3-alt fa-3x"
+        "name": "DATADOG",
+        "icon": "fas fa-dog fa-3x"
       }
     ],
     "frameworks&libs": [
@@ -81,8 +81,10 @@
     "jobs": [
       {
         "enterprise": "Accenture Brasil",
+        "icon": "fas fa-briefcase",
         "function": "Desenvolvedor Node.JS Senior",
-        "datatime": "mar de 2022 - Atual",
+        "startdate": "Mar de 2022",
+        "enddate": "Atual",
         "description": "Projetar e desenvolver tecnologias, produtos de software ou sistemas para se alinhar com as necessidades de negócios. Criar abordagem de implementação ou integração para aplicativos e seus componentes. Forneça suporte primário para lançamentos de aplicativos na produção, incluindo plano de implantação e cronograma. Coordenar e corrigir defeitos ou problemas de desempenho dentro de Contratos de Nível de Serviço. Analisar, projetar, construir e/ou testar novos componentes ou melhorias nos módulos existentes.",
         "stack": [
           "Javascript",
@@ -98,7 +100,9 @@
       {
         "enterprise": "Ioasys",
         "function": "Desenvolvedor Node.JS",
-        "datatime": "set de 2021 - mar de 2022",
+        "icon": "fas fa-briefcase",
+        "startdate": "Set de 2021",
+        "enddate": "Mar de 2022",
         "description": "Contribuir com o time de Back-end e Front-end na melhoria dos processos internos de desenvolvimento, implementando soluções atendendo as necessidades de clientes nacionais e internacionais em NodeJS, dando manutenção em soluções já implementadas.",
         "stack": [
           "Node.js",
@@ -113,13 +117,40 @@
           "Nestjs",
           "Docker"
         ]
+      },
+      {
+        "enterprise": "Trybe",
+        "function": "Desenvolvedor Full Stack",
+        "icon": "fa-solid fa-graduation-cap",
+        "startdate": "Set de 2020",
+        "enddate": "Out de 2021",
+        "description": "Nota: Turma 08 | Atividades e grupos: A Trybe é uma escola que conta com mais de 1.500 horas de aulas presenciais e online e aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.",
+        "stack": [
+          "Javascript",
+          "Node.js",
+          "React.js",
+          "Redux",
+          "Styled Components",
+          "Bootstrap",
+          "RTL",
+          "Jest",
+          "express",
+          "MongoDB",
+          "MySQL",
+          "Python"
+        ]
       }
     ]
   },
   "contact": {
+    "title": "Contato",
     "city": "salvador/BA",
     "country": "Brasil",
-    "email": "edibertooliveira@aol.com"
+    "email": "edibertooliveira@aol.com",
+    "credit": [
+      "Feito com ❤ por ",
+      ", use e abuse!"
+    ]
   },
   "socials": [
     {

@@ -21,15 +21,16 @@
 
   <!-- custom CSS file -->
   <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/terminal.css' />
 </head>
 
 <body>
 
   <!-- Social Fixed Menu -->
-  <ul class="ct-socials">
+  <ul class="social-fixed-menu">
     <% socials.forEach(function(social) { %>
       <li>
-        <a class="ct-socials-a" href="<%= social.link %>" target="_blank"><i class="<%= social.icon %>"></i></a>
+        <a class="social-fixed-menu-a" href="<%= social.link %>" target="_blank"><i class="<%= social.icon %>"></i></a>
       </li>
       <% }) %>
   </ul>
@@ -61,15 +62,22 @@
   </nav>
 
   <!-- Welcome page -->
-  <header class="masthead my-bg-dark">
+  <header class="pg-welcome my-bg-dark">
     <div class="container h-100 box">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center text-white output" id="output">
-
-          <div class="d-flex justify-content-center align-items-center media-ajuste">
-            <img src="images/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
-            <h1 class="font-weight-light cursor" id="header"></h1>
+          <div class="termonal">
+            <div class="fakeMenu">
+              <div class="fakeButtons fakeClose"></div>
+              <div class="fakeButtons fakeMinimize"></div>
+              <div class="fakeButtons fakeZoom"></div>
+            </div>
+            <div class="fakeScreen">
+              <img src="images/hand.gif" style="height: 35px; width: auto; margin-bottom: 8px;" alt="Mão acenando">
+              <p class="font-weight-light cursor" id="header"></p>
+            </div>
           </div>
+
           <p id="subheader"></p>
         </div>
       </div>
@@ -79,13 +87,11 @@
   </header>
 
   <!-- Page About me -->
-  <div class="min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
+  <div class="pg-about-me min-alt my-bg-white d-flex justify-content-end align-items-center" id="about_me">
     <div class="container content">
       <div class="row">
-        <div class="col-lg d-flex justify-content-end align-items-center" style="margin-right: 60px;">
-          <img class="rounded-circle divShadow"
-            style="height: 350px; width: auto; margin-bottom: 20px; margin-left: 60px;"
-            src="<%= presentation.profileImage %>">
+        <div class="col-lg d-flex align-items-center pg-about-me-content" style="padding-right: 60px;">
+          <img class="rounded-circle divShadow pg-about-me-image" src="<%= presentation.profileImage %>">
         </div>
 
         <div class="col-lg flex-column justify-content-start align-items-center">
@@ -123,7 +129,7 @@
   </div>
 
   <!-- Page Experience -->
-  <div class="min-alt my-bg-dark">
+  <div class="pg-experience min-alt my-bg-dark">
     <div class="container" id="experience">
       <div class="content text-white">
         <div class="align-self-center">
@@ -145,22 +151,19 @@
                   </h2>
                   <div class="d-flex justify-content-between">
                     <span class="timeline-content-info-title">
-                      <i class="fas fa-briefcase" aria-hidden="true"></i>
+                      <i class="fas <%= job.icon %>" aria-hidden="true"></i>
                       <%= job.function %>
                     </span>
-                    <span class="timeline-content-info-date">
-                      <i class="far fa-calendar-alt" aria-hidden="true"></i>
-                      <%= job.datatime %>
-                    </span>
                   </div>
-                  <!-- <p>Atuar no setor de Tecnologia da Informação - Sistemas como
-                    desenvolvedora de aplicações Web, utilizando tecnologias como PHP,
-                    CakePHP, Laravel, JavaScript, CSS, Bootstrap e outras.</p> -->
+                  <span class="timeline-content-info-date">
+                    <i class="far fa-calendar-alt" aria-hidden="true"></i>
+                    <%= job.startdate %> - <%= job.enddate %>
+                  </span>
                   <p>
                     <%= job.description %>
                   </p>
                   <span class="cd-date">
-                    <%= job.datatime %>
+                    <%= job.startdate %>
                   </span>
                   <ul class="content-skills">
                     <% job.stack.forEach(function(stackItem) { %>
@@ -179,32 +182,44 @@
   </div>
 
   <!-- Social Contacts -->
-  <div class="contacts d-flex justify-content-center align-items-center text-white" id="contact">
+  <div class="pg-social-contacts contacts d-flex justify-content-center align-items-center text-white" id="contact">
     <div class="row">
 
       <div class="d-flex justify-content-center align-items-center">
         <i class="fas fa-mail-bulk fa-lg" style="margin-right: 8px;"></i>
-        <h2>Contact me</h2>
+        <h2>
+          <%= contact.title %>
+        </h2>
       </div>
       <p class="text-center">
         <%= contact.email %>
       </p>
+      <div class="footer-social-icons">
+        <ul class="social-icons">
+          <% socials.forEach(function(social) { %>
+            <li>
+              <a class="social-fixed-menu-a" href="<%= social.link %>" target="_blank"><i
+                  class="<%= social.icon %>"></i></a>
+            </li>
+            <% }) %>
+        </ul>
+      </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="page-footer font-small indigo my-bg-footer">
+  <footer class="pg-footer font-small indigo my-bg-footer">
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 text-white">Developed with <i class="fas fa-heart"></i> by
-      <a href="https://twitter.com/bo_ju" style="color: #198754;">
-        <%= presentation.title %>
-      </a>
+    <div class="footer-copyright text-center py-3 text-white">
+      <%= contact.credit[0] %>
+        <a href="https://twitter.com/bo_ju" style="color: #198754;">
+          <%= presentation.title %>
+        </a>
+        <%= contact.credit[1] %>
     </div>
     <!-- Copyright -->
 
   </footer>
-  <!-- Footer -->
-
 
   <!-- jQuery js file -->
   <script src="assets/js/jquery3.6.0.js"></script>
