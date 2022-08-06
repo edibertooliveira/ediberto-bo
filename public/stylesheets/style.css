@@ -1,4 +1,9 @@
 @import url('fonts.css');
+@import url('terminal.css');
+
+* {
+    font-family: "Roboto", sans-serif;
+}
 
 a {
     text-decoration: none;
@@ -8,7 +13,6 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-
 
 .masthead {
     height: 100vh;
