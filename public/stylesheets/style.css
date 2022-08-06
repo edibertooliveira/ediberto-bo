@@ -80,12 +80,12 @@ img {
 }
 
 .my-btn span:hover {
-    border: 1.6px solid #9329D9;
+    border: 1.6px solid #20c997;
 }
 
 .my-btn span:hover::after {
-    border-left: 1.6px solid #9329D9;
-    border-bottom: 1.6px solid #9329D9;
+    border-left: 1.6px solid #20c997;
+    border-bottom: 1.6px solid #20c997;
 }
 
 .my-btn span {
